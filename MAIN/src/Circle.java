@@ -1,5 +1,6 @@
 public class Circle extends Shape {
- private double radius;
+ public double radius;
+
         public Circle(){
         }
         public  Circle(double radius){
@@ -19,15 +20,16 @@ public class Circle extends Shape {
         this.radius = radius;
     }
 
-
     @Override
     double getArea() {
-        return 0;
+        double area = radius * radius * Math.PI;
+        return area;
     }
 
     @Override
     double getPerimeter() {
-        return 0;
+        double perimetro = 2*Math.PI*radius;
+        return perimetro;
     }
 
     @Override

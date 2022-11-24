@@ -22,6 +22,13 @@ public Square(double side, String color, boolean filled){
         this.side = side;
     }
 
-
-
+    @Override
+    public String toString() {
+        return "Square{" +
+                "width=" + width +
+                ", lenght=" + lenght +
+                ", color='" + color + '\'' +
+                ", filled=" + filled +
+                '}';
+    }
 }
