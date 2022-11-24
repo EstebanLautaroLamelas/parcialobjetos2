@@ -20,12 +20,12 @@ public class Rectangle extends Shape {
   return lenght;
  }
 
- public double getWidth() {
-  return width;
- }
-
  public void setLenght(double lenght) {
   this.lenght = lenght;
+ }
+
+ public double getWidth() {
+  return width;
  }
 
  public void setWidth(double width) {
@@ -51,6 +51,8 @@ public class Rectangle extends Shape {
           ", lenght=" + lenght +
           ", color='" + color + '\'' +
           ", filled=" + filled +
+          ", area=" + getArea() +
+          ", perimetro=" + getPerimeter() +
           '}';
  }
 }

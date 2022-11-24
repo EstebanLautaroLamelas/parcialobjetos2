@@ -3,6 +3,7 @@ public class Circle extends Shape {
 
         public Circle(){
         }
+
         public  Circle(double radius){
             this.radius = radius;
         }
@@ -38,6 +39,8 @@ public class Circle extends Shape {
                 "radius=" + radius +
                 ", color='" + color + '\'' +
                 ", filled=" + filled +
+                ", area=" + getArea() +
+                ", perimetro=" + getPerimeter() +
                 '}';
     }
 }
