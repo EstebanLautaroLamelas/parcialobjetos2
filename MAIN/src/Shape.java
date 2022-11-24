@@ -1,11 +1,26 @@
 import java.awt.*;
 
-public class Shape {
+public abstract class Shape {
     public String color;
     boolean filled;
+
+    public double area;
+    public double perimeter;
+
+    public Shape() {
+    }
+
     public Shape (String color, boolean filled) {
         this.color = color;
         this.filled = filled;
+    }
+
+    @Override
+    public String toString() {
+        return "Shape{" +
+                "color='" + color + '\'' +
+                ", filled=" + filled +
+                '}';
     }
 
     public String getColor(){
@@ -23,4 +38,7 @@ public class Shape {
     public void setFilled(boolean filled) {
         this.filled = filled;
     }
+    abstract double getArea();
+    abstract double getPerimeter();
+
 }
