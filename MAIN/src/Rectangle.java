@@ -1,0 +1,6 @@
+public class Rectangle {
+ public double width;
+ public double lenght;
+
+ 
+}
